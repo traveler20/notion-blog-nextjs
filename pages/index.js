@@ -14,8 +14,21 @@ export default function Home({ posts }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
+			<header class={styles.header}>
+				<div class={styles.header__inner}>
+					<Link href="/">
+						<a class={styles.header__logo}>
+							<img
+								src="https://traveler20.github.io/asset/img/meta/logo-icon.svg"
+								alt=""
+							/>
+						</a>
+					</Link>
+					<div class={styles.header__mode}></div>
+				</div>
+			</header>
 			<main className={styles.container}>
-				<header className={styles.header}>
+				<header className={styles.top_header}>
 					<h1>traveler20's Notion</h1>
 					<p>
 						traveler20のNotionブログです。<br></br>{" "}

@@ -173,6 +173,19 @@ export default function Post({ page, blocks }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
+			<header class={styles.header}>
+				<div class={styles.header__inner}>
+					<Link href="/">
+						<a class={styles.header__logo}>
+							<img
+								src="https://traveler20.github.io/asset/img/meta/logo-icon.svg"
+								alt=""
+							/>
+						</a>
+					</Link>
+					<div class={styles.header__mode}></div>
+				</div>
+			</header>
 			<article className={styles.container}>
 				<h1 className={styles.name}>
 					<Text text={page.properties.Name.title} />
