@@ -186,6 +186,9 @@ export default function Post({ page, blocks }) {
 					</Link>
 				</section>
 			</article>
+			<footer className={styles.footer}>
+				<small className={styles.footerSmall}>traveler20's Notion</small>
+			</footer>
 		</div>
 	);
 }
