@@ -11,7 +11,10 @@ export default function Home({ posts }) {
 		<div>
 			<Head>
 				<title>traveler20's Notion</title>
-				<link rel="icon" href="/favicon.ico" />
+				<link
+					rel="icon"
+					href="https://traveler20.site/asset/img/meta/favicon.ico"
+				/>
 			</Head>
 
 			<header class={styles.header}>
