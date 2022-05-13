@@ -10,7 +10,7 @@ export default function Home({ posts }) {
 	return (
 		<div>
 			<Head>
-				<title>traveler20's Notion</title>
+				<title>traveler20 - コーディングが強みのWEBデザイナー</title>
 				<link
 					rel="icon"
 					href="https://traveler20.site/asset/img/meta/favicon.ico"
@@ -31,16 +31,27 @@ export default function Home({ posts }) {
 				</div>
 			</header>
 			<main className={styles.container}>
-				<header className={styles.top_header}>
-					<h1>traveler20's Notion</h1>
-					<p>
-						traveler20のNotionブログです。<br></br>{" "}
-						<a href={`https://traveler20.site/`}>traveler20.site</a>
-						<br></br> <a href="https://github.com/traveler20">Github</a>
-					</p>
-				</header>
+				<figure className={styles.top_figure}>
+					<picture>
+						<img
+							src="https://avatars.githubusercontent.com/u/60683849?v=4"
+							alt="traveler20"
+							loading="lazy"
+						/>
+					</picture>
+					<figcaption>
+						<h1 className={styles.top_figure_heading}>traveler20</h1>
+						<a
+							href="https://github.com/traveler20"
+							target="_blank"
+							rel="nofollow noopener noreferrer"
+						>
+							GitHub
+						</a>
+					</figcaption>
+				</figure>
 
-				<h2 className={styles.heading}>記事一覧</h2>
+				<h2 className={styles.heading}>制作実績の一覧</h2>
 				<ol className={styles.posts}>
 					{posts.map((post) => {
 						const date = new Date(post.last_edited_time).toLocaleString(
@@ -59,7 +70,7 @@ export default function Home({ posts }) {
 											<Text text={post.properties.Name.title} />
 										</h3>
 										{/* <p className={styles.postDescription}>{date}</p> */}
-										Read post →
+										<div className={styles.postRead}>詳細ページ →</div>
 									</a>
 								</Link>
 							</li>
@@ -68,7 +79,9 @@ export default function Home({ posts }) {
 				</ol>
 			</main>
 			<footer className={styles.footer}>
-				<small className={styles.footerSmall}>traveler20's Notion</small>
+				<small className={styles.footerSmall}>
+					&copy;&nbsp;2022&nbsp;traveler20.
+				</small>
 			</footer>
 		</div>
 	);

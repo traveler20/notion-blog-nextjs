@@ -169,8 +169,14 @@ export default function Post({ page, blocks }) {
 	return (
 		<div>
 			<Head>
-				<title>{page.properties.Name.title[0].plain_text}</title>
-				<link rel="icon" href="/favicon.ico" />
+				<title>
+					{page.properties.Name.title[0].plain_text}｜traveler20 -
+					コーディングが強みのWEBデザイナー
+				</title>
+				<link
+					rel="icon"
+					href="https://traveler20.site/asset/img/meta/favicon.ico"
+				/>
 			</Head>
 
 			<header class={styles.header}>
@@ -200,7 +206,9 @@ export default function Post({ page, blocks }) {
 				</section>
 			</article>
 			<footer className={styles.footer}>
-				<small className={styles.footerSmall}>traveler20's Notion</small>
+				<small className={styles.footerSmall}>
+					&copy;&nbsp;2022&nbsp;traveler20.
+				</small>
 			</footer>
 		</div>
 	);

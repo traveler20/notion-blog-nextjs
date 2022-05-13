@@ -1,6 +1,9 @@
 .container {
-	padding: 20px;
-	max-width: 700px;
+	flex: 1;
+
+	padding: 40px 20px;
+	width: 100%;
+	max-width: 800px;
 	margin: 0 auto;
 	line-height: 1.5;
 }
@@ -125,7 +128,7 @@
 	border-bottom: 0.5px solid rgba(153, 153, 153, 0.5);
 }
 .header__inner {
-	max-width: 700px;
+	max-width: 800px;
 	margin: 0 auto;
 	padding: 10px 20px;
 	overflow-x: hidden;
@@ -137,8 +140,10 @@
 	width: 24px;
 }
 .footer {
+	font-size: 14px;
 	text-align: center;
-	padding: 24px;
-	color: #efefef;
-	background-color: #222;
+	padding: 20px 20px;
+	color: #fff;
+	background-color: #202225;
+	border-top: 0.5px solid rgba(153, 153, 153, 0.5);
 }
