@@ -59,6 +59,10 @@
 .top_figure a:hover {
 	text-decoration: none;
 }
+
+.top_figure a + a {
+	margin-left: 14px;
+}
 /*  */
 
 .heading {

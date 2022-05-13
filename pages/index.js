@@ -19,7 +19,7 @@ export default function Home({ posts }) {
 
 			<header class={styles.header}>
 				<div class={styles.header__inner}>
-					<Link href="/">
+					<Link href="https://traveler20.site/">
 						<a class={styles.header__logo}>
 							<img
 								src="https://traveler20.github.io/asset/img/meta/logo-icon.svg"
@@ -48,6 +48,7 @@ export default function Home({ posts }) {
 						>
 							GitHub
 						</a>
+						<a href="https://traveler20.site/">Home</a>
 					</figcaption>
 				</figure>
 
